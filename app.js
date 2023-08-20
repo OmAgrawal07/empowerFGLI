@@ -56,6 +56,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         return `$${Number(value.toFixed(2)).toLocaleString()}`;
                     }
                 }
+            },
+            
+            legend: {
+                labels: {
+                    fontColor: 'black',
+                    fontFamily: 'Poppins, Arial, sans-serif',
+                    fontSize: 14,
+                    boxWidth: 0,
+                }
             }
         };
 

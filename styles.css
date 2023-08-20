@@ -1,0 +1,68 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDF1D6;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #609966;
+}
+
+#budget-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px solid #9DC08B;
+    border-radius: 5px;
+    background-color: #9DC08B;
+    color: white
+}
+
+#budget-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#budget-form select {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #9DC08B;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#budget-form input[type="number"] {
+    width: 96.3%;
+    padding: 8px;
+    border: 2px solid #9DC08B;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#budget-form input[type="submit"], #budget-form input[type="button"] {
+    background-color: #609966;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#budget-form input[type="submit"]:hover, #budget-form input[type="button"]:hover {
+    background-color: #40513B;
+}
+
+#pie-chart {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    height: auto;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Budget and Debt Payment Plan</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Personal Budget and Debt Payment Plan</h1>
+    <form id="budget-form">
+        <label for="income">Income:</label>
+        <input type="number" id="income" name="income" required><br><br>
+        
+        <label for="allocation">Select Allocation:</label>
+        <select id="allocation" name="allocation">
+            <option value="save">Save</option>
+            <option value="invest">Invest</option>
+        </select><br><br>
+        
+        <label for="hasDebt">Do you have debt?</label>
+        <select id="hasDebt" name="hasDebt">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select><br><br>
+
+        <div id="debt-form" style="display: none;">
+            <label for="principal">Principal Amount:</label>
+            <input type="number" id="principal" name="principal"><br><br>
+            
+            <label for="loanTerm">Loan Term (months):</label>
+            <input type="number" id="loanTerm" name="loanTerm"><br><br>
+            
+            <label for="monthlyInterestRate">Monthly Interest Rate (%):</label>
+            <input type="number" id="monthlyInterestRate" name="monthlyInterestRate"><br><br>
+        </div>
+
+        <label for="paysRent">Do you pay rent?</label>
+        <select id="paysRent" name="paysRent">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select><br><br>
+
+        <div id="rent-form" style="display: none;">
+            <label for="monthlyRent">Monthly Rent Payment:</label>
+            <input type="number" id="monthlyRent" name="monthlyRent"><br><br>
+        </div>
+        
+        <input type="submit" value="Generate Pie Chart">
+        <input type="button" value="Reset" id="reset-button">
+    </form>
+
+    <canvas id="pie-chart" width="400" height="400" style="display: none;"></canvas>
+    
+    <script src="app.js"></script>
+</body>
+</html>
